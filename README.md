@@ -17,26 +17,27 @@ with supporting documentation for test strategy and defect reporting.
 
 ## Project Structure
 
-cloud-storage-sdet-assignment-Manas/
-├── src/                          # FastAPI storage service implementation
+```
+cloud-storage-test-framework/
+├── src/
+│   └── storage_service.py          # FastAPI storage service implementation
 ├── tests/
-│   ├── conftest.py               # Shared fixtures across all test modules
+│   ├── conftest.py                 # Shared fixtures across all test modules
 │   ├── functional/
-│   │   ├── test_file_operations.py   # File upload, download, delete tests
-│   │   ├── test_stats.py             # Storage stats & metadata validation
-│   │   └── test_tiering.py           # Hot/warm/cold tiering logic tests
+│   │   ├── test_file_operations.py # File upload, download, delete tests
+│   │   ├── test_stats.py           # Storage stats & metadata validation
+│   │   └── test_tiering.py         # Hot/warm/cold tiering logic tests
 │   ├── performance/
-│   │   └── test_performance.py       # Latency & throughput benchmarks
+│   │   └── test_performance.py     # Latency & throughput benchmarks
 │   └── fault_injection/
-│       └── test_fault_injection.py   # Resilience under simulated failures
+│       └── test_fault_injection.py # Resilience under simulated failures
 ├── docs/
-│   ├── TEST_STRATEGY.md          # Risk-based prioritisation & coverage rationale
-│   └── BUGS_AND_IMPROVEMENTS.md  # Defect reports with reproduction steps
-├── .github/workflows/            # GitHub Actions CI/CD pipeline
+│   ├── TEST_STRATEGY.md            # Risk-based prioritisation & coverage rationale
+│   └── BUGS_AND_IMPROVEMENTS.md   # Defect reports with reproduction steps
+├── .github/workflows/              # GitHub Actions CI/CD pipeline
 ├── requirements.txt
 └── README.md
-
----
+```
 
 ## Test Coverage (38 Tests)
 
