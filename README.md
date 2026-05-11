@@ -5,6 +5,7 @@ Covers functional correctness, performance benchmarking, and fault injection sce
 
 **Tech Stack:** Python, pytest, FastAPI, httpx, pytest-benchmark, pytest-cov, GitHub Actions
 
+![CI](https://github.com/Manas-277/Cloud-storage-test-framework/actions/workflows/tests.yml/badge.svg)
 ---
 
 ## Project Overview
@@ -13,6 +14,14 @@ This project demonstrates end-to-end test automation for a cloud storage service
 across hot, warm, and cold storage tiers. The framework is structured across three test categories
 with supporting documentation for test strategy and defect reporting.
 
+
+## What This Project Demonstrates
+
+Risk-based test strategy with three-tier coverage (functional, performance, fault injection)
+FastAPI service testing using httpx async client with pytest fixtures
+Performance benchmarking with latency thresholds and throughput assertions
+Fault injection patterns simulating network failures and storage layer errors
+GitHub Actions CI pipeline with automated coverage reporting
 ---
 
 ## Project Structure
