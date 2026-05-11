@@ -22,6 +22,7 @@ FastAPI service testing using httpx async client with pytest fixtures
 Performance benchmarking with latency thresholds and throughput assertions
 Fault injection patterns simulating network failures and storage layer errors
 GitHub Actions CI pipeline with automated coverage reporting
+
 ---
 
 ## Project Structure
